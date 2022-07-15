@@ -39,205 +39,205 @@ click = True
 
 
 def checker(buttons):
-    global click
-    if buttons["text"] == "" and click == True:
-        buttons["text"] = "X"
-        click = False
-        scorekeeper()
-    elif buttons["text"] == "" and click == False:
-        buttons["text"] = "0"
-        click = True
-        scorekeeper()
+        global click
+        if buttons["text"] == "" and click == True:
+                buttons["text"] = "X"
+                click = False
+                scorekeeper()
+        elif buttons["text"] == "" and click == False:
+                buttons["text"] = "0"
+                click = True
+                scorekeeper()
 
 
 def scorekeeper():
-    if (button1["text"] == "X" and button2["text"] == "X" and button3["text"] == "X"):
-        button1.configure(background="blue")
-        button2.configure(background="blue")
-        button3.configure(background="blue")
-        n = int(playerX.get())
-        score = n + 1
-        playerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "You have just won a game")
-        reset()
+        if (button1["text"] == "X" and button2["text"] == "X" and button3["text"] == "X"):
+                button1.configure(background="blue")
+                button2.configure(background="blue")
+                button3.configure(background="blue")
+                n = int(playerX.get())
+                score = n + 1
+                playerX.set(score)
+                tkinter.messagebox.showinfo("Winner X", "You have just won a game")
+                reset()
 
-    elif (button4["text"] == "X" and button5["text"] == "X" and button6["text"] == "X"):
-        button4.configure(background="blue")
-        button5.configure(background="blue")
-        button6.configure(background="blue")
-        n = int(playerX.get())
-        score = n + 1
-        playerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "You have just won a game")
-        reset()
+        elif (button4["text"] == "X" and button5["text"] == "X" and button6["text"] == "X"):
+                button4.configure(background="blue")
+                button5.configure(background="blue")
+                button6.configure(background="blue")
+                n = int(playerX.get())
+                score = n + 1
+                playerX.set(score)
+                tkinter.messagebox.showinfo("Winner X", "You have just won a game")
+                reset()
 
-    elif (button7["text"] == "X" and button8["text"] == "X" and button9["text"] == "X"):
-        button7.configure(background="blue")
-        button8.configure(background="blue")
-        button9.configure(background="blue")
-        n = int(playerX.get())
-        score = n + 1
-        playerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "You have just won a game")
-        reset()
+        elif (button7["text"] == "X" and button8["text"] == "X" and button9["text"] == "X"):
+                button7.configure(background="blue")
+                button8.configure(background="blue")
+                button9.configure(background="blue")
+                n = int(playerX.get())
+                score = n + 1
+                playerX.set(score)
+                tkinter.messagebox.showinfo("Winner X", "You have just won a game")
+                reset()
 
-    elif (button1["text"] == "X" and button4["text"] == "X" and button7["text"] == "X"):
-        button1.configure(background="blue")
-        button4.configure(background="blue")
-        button7.configure(background="blue")
-        n = int(playerX.get())
-        score = n + 1
-        playerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "You have just won a game")
-        reset()
+        elif (button1["text"] == "X" and button4["text"] == "X" and button7["text"] == "X"):
+                button1.configure(background="blue")
+                button4.configure(background="blue")
+                button7.configure(background="blue")
+                n = int(playerX.get())
+                score = n + 1
+                playerX.set(score)
+                tkinter.messagebox.showinfo("Winner X", "You have just won a game")
+                reset()
 
-    elif (button2["text"] == "X" and button5["text"] == "X" and button8["text"] == "X"):
-        button2.configure(background="blue")
-        button5.configure(background="blue")
-        button8.configure(background="blue")
-        n = int(playerX.get())
-        score = n + 1
-        playerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "You have just won a game")
-        reset()
+        elif (button2["text"] == "X" and button5["text"] == "X" and button8["text"] == "X"):
+                button2.configure(background="blue")
+                button5.configure(background="blue")
+                button8.configure(background="blue")
+                n = int(playerX.get())
+                score = n + 1
+                playerX.set(score)
+                tkinter.messagebox.showinfo("Winner X", "You have just won a game")
+                reset()
 
-    elif (button3["text"] == "X" and button6["text"] == "X" and button9["text"] == "X"):
-        button3.configure(background="blue")
-        button6.configure(background="blue")
-        button9.configure(background="blue")
-        n = int(playerX.get())
-        score = n + 1
-        playerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "You have just won a game")
-        reset()
+        elif (button3["text"] == "X" and button6["text"] == "X" and button9["text"] == "X"):
+                button3.configure(background="blue")
+                button6.configure(background="blue")
+                button9.configure(background="blue")
+                n = int(playerX.get())
+                score = n + 1
+                playerX.set(score)
+                tkinter.messagebox.showinfo("Winner X", "You have just won a game")
+                reset()
 
-    elif (button1["text"] == "X" and button5["text"] == "X" and button9["text"] == "X"):
-        button1.configure(background="blue")
-        button5.configure(background="blue")
-        button9.configure(background="blue")
-        n = int(playerX.get())
-        score = n + 1
-        playerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "You have just won a game")
-        reset()
+        elif (button1["text"] == "X" and button5["text"] == "X" and button9["text"] == "X"):
+                button1.configure(background="blue")
+                button5.configure(background="blue")
+                button9.configure(background="blue")
+                n = int(playerX.get())
+                score = n + 1
+                playerX.set(score)
+                tkinter.messagebox.showinfo("Winner X", "You have just won a game")
+                reset()
 
-    elif (button3["text"] == "X" and button5["text"] == "X" and button7["text"] == "X"):
-        button3.configure(background="blue")
-        button5.configure(background="blue")
-        button7.configure(background="blue")
-        n = int(playerX.get())
-        score = n + 1
-        playerX.set(score)
-        tkinter.messagebox.showinfo("Winner X", "You have just won a game")
-        reset()
+        elif (button3["text"] == "X" and button5["text"] == "X" and button7["text"] == "X"):
+                button3.configure(background="blue")
+                button5.configure(background="blue")
+                button7.configure(background="blue")
+                n = int(playerX.get())
+                score = n + 1
+                playerX.set(score)
+                tkinter.messagebox.showinfo("Winner X", "You have just won a game")
+                reset()
 
-    elif (button1["text"] == "0" and button2["text"] == "0" and button3["text"] == "0"):
-        button1.configure(background="red")
-        button2.configure(background="red")
-        button3.configure(background="red")
-        n = int(playerO.get())
-        score = n + 1
-        playerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "You have just won a game")
-        reset()
+        elif (button1["text"] == "0" and button2["text"] == "0" and button3["text"] == "0"):
+                button1.configure(background="red")
+                button2.configure(background="red")
+                button3.configure(background="red")
+                n = int(playerO.get())
+                score = n + 1
+                playerO.set(score)
+                tkinter.messagebox.showinfo("Winner O", "You have just won a game")
+                reset()
 
-    elif (button4["text"] == "0" and button5["text"] == "0" and button6["text"] == "0"):
-        button4.configure(background="red")
-        button5.configure(background="red")
-        button6.configure(background="red")
-        n = int(playerO.get())
-        score = n + 1
-        playerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "You have just won a game")
-        reset()
+        elif (button4["text"] == "0" and button5["text"] == "0" and button6["text"] == "0"):
+                button4.configure(background="red")
+                button5.configure(background="red")
+                button6.configure(background="red")
+                n = int(playerO.get())
+                score = n + 1
+                playerO.set(score)
+                tkinter.messagebox.showinfo("Winner O", "You have just won a game")
+                reset()
 
-    elif (button7["text"] == "0" and button8["text"] == "0" and button9["text"] == "0"):
-        button7.configure(background="red")
-        button8.configure(background="red")
-        button9.configure(background="red")
-        n = int(playerO.get())
-        score = n + 1
-        playerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "You have just won a game")
-        reset()
+        elif (button7["text"] == "0" and button8["text"] == "0" and button9["text"] == "0"):
+                button7.configure(background="red")
+                button8.configure(background="red")
+                button9.configure(background="red")
+                n = int(playerO.get())
+                score = n + 1
+                playerO.set(score)
+                tkinter.messagebox.showinfo("Winner O", "You have just won a game")
+                reset()
 
-    elif (button1["text"] == "0" and button4["text"] == "0" and button7["text"] == "0"):
-        button1.configure(background="red")
-        button4.configure(background="red")
-        button7.configure(background="red")
-        n = int(playerO.get())
-        score = n + 1
-        playerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "You have just won a game")
-        reset()
+        elif (button1["text"] == "0" and button4["text"] == "0" and button7["text"] == "0"):
+                button1.configure(background="red")
+                button4.configure(background="red")
+                button7.configure(background="red")
+                n = int(playerO.get())
+                score = n + 1
+                playerO.set(score)
+                tkinter.messagebox.showinfo("Winner O", "You have just won a game")
+                reset()
 
-    elif (button2["text"] == "0" and button5["text"] == "0" and button8["text"] == "0"):
-        button2.configure(background="red")
-        button5.configure(background="red")
-        button8.configure(background="red")
-        n = int(playerO.get())
-        score = n + 1
-        playerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "You have just won a game")
-        reset()
+        elif (button2["text"] == "0" and button5["text"] == "0" and button8["text"] == "0"):
+                button2.configure(background="red")
+                button5.configure(background="red")
+                button8.configure(background="red")
+                n = int(playerO.get())
+                score = n + 1
+                playerO.set(score)
+                tkinter.messagebox.showinfo("Winner O", "You have just won a game")
+                reset()
 
-    elif (button3["text"] == "0" and button6["text"] == "0" and button9["text"] == "0"):
-        button3.configure(background="red")
-        button6.configure(background="red")
-        button9.configure(background="red")
-        n = int(playerO.get())
-        score = n + 1
-        playerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "You have just won a game")
-        reset()
+        elif (button3["text"] == "0" and button6["text"] == "0" and button9["text"] == "0"):
+                button3.configure(background="red")
+                button6.configure(background="red")
+                button9.configure(background="red")
+                n = int(playerO.get())
+                score = n + 1
+                playerO.set(score)
+                tkinter.messagebox.showinfo("Winner O", "You have just won a game")
+                reset()
 
-    elif (button1["text"] == "0" and button5["text"] == "0" and button9["text"] == "0"):
-        button1.configure(background="red")
-        button5.configure(background="red")
-        button9.configure(background="red")
-        n = int(playerO.get())
-        score = n + 1
-        playerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "You have just won a game")
-        reset()
+        elif (button1["text"] == "0" and button5["text"] == "0" and button9["text"] == "0"):
+                button1.configure(background="red")
+                button5.configure(background="red")
+                button9.configure(background="red")
+                n = int(playerO.get())
+                score = n + 1
+                playerO.set(score)
+                tkinter.messagebox.showinfo("Winner O", "You have just won a game")
+                reset()
 
-    elif (button3["text"] == "0" and button5["text"] == "0" and button7["text"] == "0"):
-        button3.configure(background="red")
-        button5.configure(background="red")
-        button7.configure(background="red")
-        n = int(playerO.get())
-        score = n + 1
-        playerO.set(score)
-        tkinter.messagebox.showinfo("Winner O", "You have just won a game")
-        reset()
+        elif (button3["text"] == "0" and button5["text"] == "0" and button7["text"] == "0"):
+                button3.configure(background="red")
+                button5.configure(background="red")
+                button7.configure(background="red")
+                n = int(playerO.get())
+                score = n + 1
+                playerO.set(score)
+                tkinter.messagebox.showinfo("Winner O", "You have just won a game")
+                reset()
 
 
 def reset():
-    button1["text"] = ""
-    button2["text"] = ""
-    button3["text"] = ""
-    button4["text"] = ""
-    button5["text"] = ""
-    button6["text"] = ""
-    button7["text"] = ""
-    button8["text"] = ""
-    button9["text"] = ""
+        button1["text"] = ""
+        button2["text"] = ""
+        button3["text"] = ""
+        button4["text"] = ""
+        button5["text"] = ""
+        button6["text"] = ""
+        button7["text"] = ""
+        button8["text"] = ""
+        button9["text"] = ""
 
-    button1.configure(background="gainsboro")
-    button2.configure(background="gainsboro")
-    button3.configure(background="gainsboro")
-    button4.configure(background="gainsboro")
-    button5.configure(background="gainsboro")
-    button6.configure(background="gainsboro")
-    button7.configure(background="gainsboro")
-    button8.configure(background="gainsboro")
-    button9.configure(background="gainsboro")
+        button1.configure(background="gainsboro")
+        button2.configure(background="gainsboro")
+        button3.configure(background="gainsboro")
+        button4.configure(background="gainsboro")
+        button5.configure(background="gainsboro")
+        button6.configure(background="gainsboro")
+        button7.configure(background="gainsboro")
+        button8.configure(background="gainsboro")
+        button9.configure(background="gainsboro")
 
 
 def NewGame():
-    reset()
-    playerX.set(0)
-    playerO.set(0)
+        reset()
+        playerX.set(0)
+        playerO.set(0)
 
 
 lblTitleX = Label(RightFrame1,
@@ -251,7 +251,8 @@ lblTitleX.grid(row=0,
                sticky=W)
 txtPlayerX = Entry(RightFrame1,
                    font=("arial", 40, "bold"),
-                   bd=2, fg="black",
+                   bg="White",
+                   bd=2, fg="Black",
                    textvariable=playerX,
                    width=14,
                    justify=LEFT)
@@ -268,51 +269,53 @@ lblTitleO.grid(row=1,
                column=0,
                sticky=W)
 
-txtPlayerO = Entry(RightFrame1, font=("arial", 40, "bold"), bd=2, fg="black", textvariable=playerO, width=14,
+txtPlayerO = Entry(RightFrame1, font=("arial", 40, "bold"), bg="White",
+                   bd=2, fg="Black", textvariable=playerO, width=14,
                    justify=LEFT).grid(
-    row=1, column=1)
+        row=1, column=1)
 
-btnReset = Button(RightFrame2, text="Reset", font=("Times", 26, "bold"), height=3, width=20, bg="gainsboro",
+btnReset = Button(RightFrame2, text="Reset", font=("Times", 26, "bold"), height=3, width=20, bg="gainsboro", fg="Black",
                   command=reset)
 btnReset.grid(row=0, column=0)
 
 btnNewGame = Button(RightFrame2, text="New Game", font=("Times", 26, "bold"), height=3, width=20, bg="gainsboro",
+                    fg="Black",
                     command=NewGame)
 btnNewGame.grid(row=1, column=0)
 
-button1 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button1 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button1))
 button1.grid(row=1, column=0, sticky=S + N + E + W)
 
-button2 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button2 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button2))
 button2.grid(row=1, column=1, sticky=S + N + E + W)
 
-button3 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button3 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button3))
 button3.grid(row=1, column=2, sticky=S + N + E + W)
 
-button4 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button4 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button4))
 button4.grid(row=2, column=0, sticky=S + N + E + W)
 
-button5 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button5 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button5))
 button5.grid(row=2, column=1, sticky=S + N + E + W)
 
-button6 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button6 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button6))
 button6.grid(row=2, column=2, sticky=S + N + E + W)
 
-button7 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button7 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button7))
 button7.grid(row=3, column=0, sticky=S + N + E + W)
 
-button8 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button8 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button8))
 button8.grid(row=3, column=1, sticky=S + N + E + W)
 
-button9 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro",
+button9 = Button(LeftFrame, text="", font=("Times", 26, "bold"), height=3, width=8, bg="gainsboro", fg="Black",
                  command=lambda: checker(button9))
 button9.grid(row=3, column=2, sticky=S + N + E + W)
 
